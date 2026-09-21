@@ -38,5 +38,5 @@ GitHub Pages deployment is defined in `.github/workflows/deploy-pages.yml` and r
 ## Contact
 
 Jainil Trivedi  
-Email: jainil.planck@gmail.com  
+Email: Jainiltrivedi17@gmail.com  
 Phone: +91 63548 09722
