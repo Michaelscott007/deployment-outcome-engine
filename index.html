@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Applied AI / Forward Deployed Engineering proof of work by Jainil Trivedi." />
+  <title>Jainil Trivedi — Applied AI / FDE Proof of Work</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Home">JT<span>●</span></a>
+    <nav class="topnav" aria-label="Primary">
+      <a href="#work">Proof</a>
+      <a href="#build">Build</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="tiny-button" id="copyLink">Copy page link</button>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="eyebrow"><span class="status-dot"></span> APPLIED AI / FORWARD DEPLOYED ENGINEERING</div>
+      <div class="hero-grid">
+        <div>
+          <h1>I turn messy business problems into AI systems that actually ship.</h1>
+          <p class="hero-lede">Founder-builder working across product, customers and engineering: Python/FastAPI, TypeScript/Next.js, Postgres/Supabase, retrieval, agents, evals, background jobs and production reliability.</p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#work">See the work <span>↘</span></a>
+            <a class="text-link" href="#build">How I build →</a>
+          </div>
+        </div>
+        <aside class="hero-proof">
+          <div class="proof-kicker">THE 10-SECOND VERSION</div>
+          <div class="proof-item"><span>01</span><p>Understand the operational problem before touching the model.</p></div>
+          <div class="proof-item"><span>02</span><p>Build the smallest complete loop: context → agent → tools → eval → human gate.</p></div>
+          <div class="proof-item"><span>03</span><p>Instrument failure, tighten the system, then ship the outcome.</p></div>
+        </aside>
+      </div>
+      <div class="signal-strip" aria-label="Core skills">
+        <span>AGENTS</span><span>EVALS</span><span>RAG</span><span>FASTAPI</span><span>NEXT.JS</span><span>POSTGRES</span><span>MODEL ROUTING</span><span>OBSERVABILITY</span>
+      </div>
+    </section>
+
+    <section class="section-shell work" id="work">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">PROOF, NOT CLAIMS</div>
+          <h2>Five real job problems. One reusable engineering system.</h2>
+        </div>
+        <p>Each scenario below is a compact technical demonstration tailored to the actual work these teams describe. Outputs are explicitly simulated — the system design and implementation are the proof.</p>
+      </div>
+
+      <div class="company-tabs" role="tablist" aria-label="Company scenarios">
+        <button class="company-tab active" data-company="deployment" role="tab">Deployment.io</button>
+        <button class="company-tab" data-company="aistudio" role="tab">AiStudio</button>
+        <button class="company-tab" data-company="pingaura" role="tab">PingAura</button>
+        <button class="company-tab" data-company="finn" role="tab">Finn</button>
+        <button class="company-tab" data-company="peakflo" role="tab">Peakflo</button>
+      </div>
+
+      <article class="scenario-card" id="scenarioCard">
+        <div class="scenario-meta">
+          <span class="demo-badge">LIVE DEMO · SIMULATED DATA</span>
+          <span id="scenarioRole">Forward Deployed Engineer</span>
+        </div>
+        <div class="scenario-grid">
+          <div class="scenario-copy">
+            <div class="micro-label">THE JOB PROBLEM</div>
+            <h3 id="scenarioTitle">Outcome → production, without losing control.</h3>
+            <p id="scenarioDescription"></p>
+            <div class="architecture" id="architecture"></div>
+          </div>
+          <div class="demo-panel">
+            <div class="demo-topline">
+              <span id="demoTitle">Outcome Orchestrator</span>
+              <span class="live-dot">● READY</span>
+            </div>
+            <div id="demoInputs"></div>
+            <button class="run-button" id="runDemo">Run demonstration <span>↗</span></button>
+            <div class="result-console" id="resultConsole" aria-live="polite">
+              <div class="console-empty">Choose a scenario, edit the input, then run it.</div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <div class="engineering-row">
+        <div class="metric-card"><span class="metric-number">01</span><h4>Customer-native discovery</h4><p>Requirements are translated into a typed task model before generation begins.</p></div>
+        <div class="metric-card"><span class="metric-number">02</span><h4>Observable agent loop</h4><p>Every step emits state, confidence, evidence and an explicit failure surface.</p></div>
+        <div class="metric-card"><span class="metric-number">03</span><h4>Evaluation before trust</h4><p>Outputs are measured against task-specific checks instead of accepted because they look fluent.</p></div>
+        <div class="metric-card"><span class="metric-number">04</span><h4>Human approval</h4><p>High-impact actions stop at a review gate; automation is not confused with autonomy.</p></div>
+      </div>
+    </section>
+
+    <section class="section-shell build" id="build">
+      <div class="build-grid">
+        <div class="build-sticky">
+          <div class="eyebrow">HOW I BUILD</div>
+          <h2>Own the outcome, not the ticket.</h2>
+          <p>The pattern is deliberately boring in the places where boring creates reliability.</p>
+        </div>
+        <div class="process-list">
+          <div class="process-step"><span>01</span><div><h3>Frame</h3><p>Clarify the business outcome, inputs, constraints, side effects and definition of done.</p></div></div>
+          <div class="process-step"><span>02</span><div><h3>Instrument</h3><p>Define traces and evals before polishing prompts. If failure is invisible, iteration is theatre.</p></div></div>
+          <div class="process-step"><span>03</span><div><h3>Build</h3><p>Use the simplest architecture that can complete the loop. Add agentic complexity only when the task benefits from it.</p></div></div>
+          <div class="process-step"><span>04</span><div><h3>Break</h3><p>Attack the system with missing context, conflicting instructions, malformed inputs and tool failures.</p></div></div>
+          <div class="process-step"><span>05</span><div><h3>Ship</h3><p>Put it behind the right approval boundary, monitor production behaviour and turn repeated fixes into system improvements.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell selected-build">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">LONGER-FORM EVIDENCE</div>
+          <h2>I have already lived inside the messy middle.</h2>
+        </div>
+      </div>
+      <div class="case-card">
+        <div>
+          <span class="case-tag">FOUNDER-BUILT AI PRODUCT</span>
+          <h3>AI-native workspace for regulated pharmaceutical documentation.</h3>
+          <p>A production-oriented system spanning document generation, retrieval, model routing, approval gates, background jobs, auditability and human review. The technical lesson was simple: a plausible output is not the same thing as a dependable workflow.</p>
+        </div>
+        <div class="case-stack">
+          <span>Next.js / React</span><span>FastAPI</span><span>Supabase / pgvector</span><span>Multi-model routing</span><span>Evals + testing</span><span>Background jobs</span><span>Audit / approval gates</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell contact" id="contact">
+      <div class="contact-card">
+        <div>
+          <div class="eyebrow invert">NEXT STEP</div>
+          <h2>Give me one ugly workflow.</h2>
+          <p>I’ll show you how I decompose it, where I put the evals, what I automate, and what I refuse to automate.</p>
+        </div>
+        <div class="contact-actions">
+          <a href="mailto:jainil.planck@gmail.com" class="contact-button">jainil.planck@gmail.com ↗</a>
+          <a href="tel:+916354809722" class="contact-button secondary">+91 63548 09722</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer section-shell">
+    <span>JAINIL TRIVEDI · 2026</span>
+    <span>BUILT AS PROOF OF WORK, NOT A PORTFOLIO TEMPLATE.</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
